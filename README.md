@@ -1,6 +1,6 @@
 # VideoBlur
 
-Blur a part of a video using FFmpeg
+Video_blur is a small ruby gem to blur a part of a video using FFmpeg. It automates the aspect ratio conversion and the FFmpeg filter parameters.
 
 Input video :
 

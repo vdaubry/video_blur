@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = VideoBlur::VERSION
   spec.authors       = ["Vincent Daubry"]
   spec.email         = ["vdaubry@gmail.com"]
-
-  spec.summary       = %q{FFmpeg ruby wrapper to blur some static part of the video }
-  spec.description   = %q{video_blur gem is a small ruby gem to blur a static part of a video using FFmpeg. It automates the aspect ratio conversion and the ffmpeg filter parameters }
+  
+  spec.summary       = %q{FFmpeg Ruby wrapper to blur a part of a video }
+  spec.description   = %q{video_blur gem is a small Ruby gem to blur a part of a video using FFmpeg. It automates the aspect ratio conversion and the FFmpeg filter parameters }
   spec.homepage      = ""
   spec.license       = "MIT"
 
