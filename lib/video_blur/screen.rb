@@ -1,8 +1,8 @@
 module VideoBlur
   class Screen
     def initialize(width: 1440, height: 815)
-      @width = width.to_f
-      @height = height.to_f
+      @width = width && width.to_f || 1140
+      @height = height && height.to_f || 815
     end
     
     def ratio(video:)

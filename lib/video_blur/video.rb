@@ -3,7 +3,6 @@ module VideoBlur
     def initialize(input:, output:)
       @input = input
       @output = output
-      abort("Video file not found : #{@input}") unless File.exists?(@input)
     end
     
     def width

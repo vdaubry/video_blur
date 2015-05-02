@@ -1,5 +1,3 @@
-require 'byebug'
-
 module VideoBlur
   class Blur
     def initialize(video:, box:)

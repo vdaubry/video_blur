@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
-require 'video_blur'
+require "bundler/setup"
+require "video_blur"
 
 VideoBlur::CLI.instance.run(ARGV)

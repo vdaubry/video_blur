@@ -43,5 +43,19 @@ describe VideoBlur::Screen do
         expect(VideoBlur::Screen.new(width: 1440, height: 815).ratio(video: video)).to eq(1.0)
       end
     end
+    
+    context "nil values" do
+      it "sets default values" do
+        screen = VideoBlur::Screen.new(width: nil, height: nil)
+        expect(screen.ratio(video: video)).to eq(1.0)
+      end
+    end
+    
+    context "missing values" do
+      it "sets default values" do
+        screen = VideoBlur::Screen.new
+        expect(screen.ratio(video: video)).to eq(1.0)
+      end
+    end
   end
 end

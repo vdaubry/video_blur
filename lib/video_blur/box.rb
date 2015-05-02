@@ -8,7 +8,7 @@ module VideoBlur
       @ratio = ratio
     end
     
-    def x
+    def x      
       (@x * @ratio).to_i
     end
     
