@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Vincent Daubry"]
   spec.email         = ["vdaubry@gmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
   spec.summary       = %q{FFmpeg ruby wrapper to blur some static part of the video }
   spec.description   = %q{video_blur gem is a small ruby gem to blur a static part of a video using FFmpeg. It automates the aspect ratio conversion and the ffmpeg filter parameters }
   spec.homepage      = ""
