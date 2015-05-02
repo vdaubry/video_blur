@@ -21,7 +21,7 @@ module VideoBlur
     end
     
     def self.validate(path:, options:)
-      abort("Missing path to video") unless !path.empty?
+      abort("Missing path to video") if path.nil? || path.empty?
       abort("Video file not found: #{@input}") unless File.exists?(path)
 
       abort("Missing box options") unless options[:x] && 

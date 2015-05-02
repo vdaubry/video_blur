@@ -1,8 +1,27 @@
 # VideoBlur
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/video_blur`. To experiment with that code, run `bin/console` for an interactive prompt.
+Blur a part of a video using FFmpeg
 
-TODO: Delete this and the text above, and describe your gem
+Input video :
+
+![image](http://i.imgur.com/dUC5I3g.jpg)
+
+
+Output video :
+
+![image](http://i.imgur.com/O3L9iiP.jpg)
+
+
+## Requirements :
+
+[FFmpeg](https://www.ffmpeg.org/) must be installed. To ensure it is available, on your command line, run `which ffmpeg`.
+This will give you the path where ffmpeg is installed. For example, it might return `/usr/local/bin/ffmpeg`.
+
+Install FFmpeg on OS X : ``` brew install ffmpeg ``` 
+
+Install FFmpeg on Linux : ``` apt-get install ffmpeg ffmpeg ``` 
+
+
 
 ## Installation
 
@@ -20,9 +39,26 @@ Or install it yourself as:
 
     $ gem install video_blur
 
+
 ## Usage
 
-TODO: Write usage instructions here
+Example : Blur the video in.mp4 starting at (x=200, y=160) with blur box size (width=145, height=360)
+    
+    video_blur in.mp4 -x 200 -y 160 -w 145 -e 360 -o out.mp4
+
+
+For more information see help :
+
+    Usage: video_blur [options] [input_file]
+        -o, --output OUTPUT              Set output directory
+        -W, --screen-width WIDTH         Set screen width (default 1440)
+        -H, --screen-height HEIGHT       Set screen width (default 1440)
+        -x, --box-x X-POSITION           Set box x origin
+        -y, --box-y Y-POSITION           Set box y origin
+        -w, --box-width WIDTH            Set box width
+        -e, --box-height height          Set box width
+        -h, --help                       Prints this help
+
 
 ## Development
 
